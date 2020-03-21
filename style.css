@@ -1,0 +1,195 @@
+.tac{
+  text-align: center;
+}
+
+.menuitem{
+color: white;
+font-family: 'Teko', sans-serif;
+font-size: 30px;
+}
+
+.mb-20{
+  padding-bottom: 20px;
+}
+
+.menuitem a{
+color: white;
+font-family: 'Teko', sans-serif;
+font-size: 30px;
+}
+
+.orange{
+  color: #FB8122;
+}
+
+.w-50{
+  width: 50%;
+}
+
+.menuitem a:hover{
+text-decoration: none;
+color: #FB8122;
+font-family: 'Teko', sans-serif;
+font-size: 30px;
+}
+
+.buyButtonIndex{
+width: 310px;
+height: 60px;
+border: 1px solid darkgrey;
+background-color: #7d0202;
+font-family: 'Teko', sans-serif;
+font-size: 28px;
+color: white;
+}
+
+.name{
+font-family: 'Coustard', serif;
+font-size: 20px;
+}
+
+.price{
+font-family: 'Bitter', serif;
+color: darkred;
+font-size: 18px;
+}
+
+.w-100{
+width: 100%;
+}
+
+.mt-50{
+margin-top: 50px;
+}
+
+.header{
+  height: 50px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #3c3c3c;
+  padding-bottom: 60px;
+}
+
+.description{
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.title{
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #3c3c3c;
+}
+
+.products{
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.product{
+  height: 300px;
+
+}
+
+.product:hover{
+  height: 300px;
+  width: 350px;
+}
+
+.map{
+  width: 100%;
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+}
+
+.footer{
+  height: 110px;
+  background-color: #3c3c3c;
+  color: white;
+  font-size: 24px;
+  font-family: 'Teko', sans-serif;
+}
+
+.flex-list-style {
+        display: flex;
+        list-style: none;
+  }
+.fa{
+    text-decoration: none;
+    background-color: #f1f1f1;
+    color: #ff2626;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%;
+    box-shadow: -5px 5px 20px -5px #010101;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+
+.block{
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-top: 200px;
+  background-color: #3c3c3c;
+  width: 300px;
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
+  color: white;
+}
+
+#loginInput{
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#passwordInput{
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#btn{
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.mt-100{
+margin-top: 170px;
+
+}
+
+
+
+
+
+.categories{
+  background-color: grey;
+  height: 70px;
+  font-family: 'Coustard', serif;
+  color: white;
+}
