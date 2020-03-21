@@ -1,4 +1,20 @@
 var products = document.getElementsByClassName("product");
+var button1 = document.getElementById("p1");
+var button2 = document.getElementById("p2");
+var button3 = document.getElementById("p3");
+var button4 = document.getElementById("p4");
+var button5 = document.getElementById("p5");
+var button6 = document.getElementById("p6");
+var button7 = document.getElementById("p7");
+var button8 = document.getElementById("p8");
+var button9 = document.getElementById("p9");
+var button10 = document.getElementById("p10");
+var button11 = document.getElementById("p11");
+var button12 = document.getElementById("p12");
+var button13 = document.getElementById("p13");
+var button14 = document.getElementById("p14");
+var button15 = document.getElementById("p15");
+var button16 = document.getElementById("p16");
 
 function loadPage(element){
     var name = element.getElementsByName("name")[0]["innerText"];
@@ -53,6 +69,89 @@ function originalProtein(){
     document.location.href = "product.html";
 }
 
+function chocolateProteinAdd(){
+    product = products[0].children;
+
+    var item = {
+        imageSrc: product[0].children[0]["src"],
+        name: product[1].innerText,
+        price: product[2].innerText
+    }
+
+    var cart = [];
+
+    if(JSON.parse(localStorage.getItem("cart")) != null){
+        cart = JSON.parse(localStorage.getItem("cart"));
+    }
+
+    cart.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function stimulatorAdd(){
+    product = products[1].children;
+
+    var item = {
+        imageSrc: product[0].children[1]["src"],
+        name: product[2].innerText,
+        price: product[3].innerText
+    }
+
+    var cart = [];
+
+    if(JSON.parse(localStorage.getItem("cart")) != null){
+        cart = JSON.parse(localStorage.getItem("cart"));
+    }
+
+    cart.push(item);
+    console.log(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function iceCreamProteinAdd(){
+    product = products[2].children;
+
+    var item = {
+        imageSrc: product[0].children[1]["src"],
+        name: product[2].innerText,
+        price: product[3].innerText
+    }
+
+    var cart = [];
+
+    if(JSON.parse(localStorage.getItem("cart")) != null){
+        cart = JSON.parse(localStorage.getItem("cart"));
+    }
+
+    cart.push(item);
+    console.log(product);
+    console.log(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function originalProteinAdd(){
+    product = products[3].children;
+
+    var item = {
+        imageSrc: product[0].children[1]["src"],
+        name: product[2].innerText,
+        price: product[3].innerText
+    }
+
+    var cart = [];
+
+    if(JSON.parse(localStorage.getItem("cart")) != null){
+        cart = JSON.parse(localStorage.getItem("cart"));
+    }
+
+    cart.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+button1.addEventListener("click", function(){
+    chocolateProteinAdd();
+});
+
 products[0].addEventListener("click", function(){
     chocolateProtein();
 });
@@ -61,52 +160,118 @@ products[1].addEventListener("click", function(){
     stimulator();
 });
 
+button2.addEventListener("click", function(){
+    stimulatorAdd();
+});
+
 products[2].addEventListener("click", function(){
     iceCreamProtein();
+});
+
+button3.addEventListener("click", function(){
+    iceCreamProteinAdd();
 });
 
 products[3].addEventListener("click", function(){
     originalProtein();
 });
 
+button4.addEventListener("click", function(){
+    originalProteinAdd();
+});
 
 products[4].addEventListener("click", function(){
     stimulator();
+});
+
+button5.addEventListener("click", function(){
+    stimulatorAdd();
 });
 
 products[5].addEventListener("click", function(){
     chocolateProtein();
 });
 
+button6.addEventListener("click", function(){
+    chocolateProteinAdd();
+});
+
 products[6].addEventListener("click", function(){
     iceCreamProtein();
+});
+
+button7.addEventListener("click", function(){
+    iceCreamProteinAdd();
 });
 
 products[7].addEventListener("click", function(){
     originalProtein();
 });
 
+button8.addEventListener("click", function(){
+    originalProteinAdd();
+});
+
 products[8].addEventListener("click", function(){
     chocolateProtein();
 });
+
+button9.addEventListener("click", function(){
+    chocolateProteinAdd();
+});
+
 products[9].addEventListener("click", function(){
     stimulator();
 });
+
+button10.addEventListener("click", function(){
+    stimulatorAdd();
+});
+
 products[10].addEventListener("click", function(){
     originalProtein();
 });
+
+button11.addEventListener("click", function(){
+    originalProteinAdd();
+});
+
 products[11].addEventListener("click", function(){
     iceCreamProtein();
 });
+
+button12.addEventListener("click", function(){
+    iceCreamProteinAdd();
+});
+
 products[12].addEventListener("click", function(){
     chocolateProtein();
 });
+
+button13.addEventListener("click", function(){
+    chocolateProteinAdd();
+});
+
 products[13].addEventListener("click", function(){
     originalProtein();
 });
+
+button14.addEventListener("click", function(){
+    originalProteinAdd();
+});
+
 products[14].addEventListener("click", function(){
     iceCreamProtein();
 });
+
+button15.addEventListener("click", function(){
+    iceCreamProteinAdd();
+});
+
 products[15].addEventListener("click", function(){
     stimulator();
+});
+
+button16.addEventListener("click", function(){
+    stimulatorAdd();
 });

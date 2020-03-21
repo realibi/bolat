@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,68 +14,51 @@
     <link href="https://fonts.googleapis.com/css?family=Coustard&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-    .block a{
-        font-size: 14px;
-    }
-</style>
-
 <body>
 
   <div class="header">
       <div class="row">
-          <div class="col-md-2 tac menuitem">LOGO</div>
-          <div class="col-md-2 tac"></div>
+          <div class="col-md-1 tac menuitem">LOGO</div>
+          <div class="col-md-1 tac"></div>
           <div class="col-md-2 tac menuitem"><a href="index.html">MAIN</a></div>
           <div class="col-md-2 tac menuitem">ABOUT US</div>
-          <div class="col-md-2 tac menuitem"><a href="product.html">PRODUCTS</a></div>
+          <div class="col-md-2 tac menuitem"><a href="products.html">PRODUCTS</a></div>
           <div class="col-md-2 tac menuitem"><a href="login.html">LOGIN</a></div>
+          <div class="col-md-2 tac menuitem"><a href="cart.html">CART</a></div>
       </div>
   </div>
 
-
-  <div class="b-popup" id="popup1">
-    <div class="b-popup-content">
-      <div class="row">
-        <div class="col-12 tac">
-          <p>Incorrect login or password!</p>
-          <p>Login and password must consist <br> minimum 6 symbols</p>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4">
+                <button id="clearBtn" class="buyButtonIndex">Clear</button>
+            </div>
         </div>
-        <br>
-        <br>
-        <div class="col-12 tac">
-          <a class="okButton" href="javascript:PopUpHide()">OK</a>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <div class="footer">
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 tac">
+            Sport Nutrition Co.
+          </div>
+          <div class="col-md-3 tac">
+            Nagym Bolat
+          </div>
+          <div class="col-md-3 tac">
+            AITU University
+          </div>
+          <div class="col-md-3 tac">
+            All Rights Reserved
+          </div>
         </div>
       </div>
     </div>
-</div>
-
-
-    <center>
-    <div class="block">
-        <br>
-        <center><p class="">Log in</p></center>
-        <input type="text" id="loginInput" placeholder="Type your login"> <br><br>
-        <input type="password" id="passwordInput" placeholder="Type your password"> <br><br>
-        <div class="row">
-            <div class="col-12">
-                <input type="submit" value="Log in" id="loginBtn">
-            </div>
-            <br>
-            <br>
-            <div class="col-12">
-                <a href="registration.html">Registration</a>
-            </div>
-            <div class="col-12">
-                <a href="">Forgot password?</a>
-            </div>
-            <br>
-            <br>
-        </div>
-        
-    </div>
-    </center>
 </body>
-<script src="loginCheck.js"></script>
+<script src="cartLoad.js"></script>
 </html>

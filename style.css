@@ -8,18 +8,10 @@ font-family: 'Teko', sans-serif;
 font-size: 30px;
 }
 
-.mb-20{
-  padding-bottom: 20px;
-}
-
 .menuitem a{
 color: white;
 font-family: 'Teko', sans-serif;
 font-size: 30px;
-}
-
-.orange{
-  color: #FB8122;
 }
 
 .w-50{
@@ -41,6 +33,18 @@ background-color: #7d0202;
 font-family: 'Teko', sans-serif;
 font-size: 28px;
 color: white;
+}
+
+.addToCart{
+width: 50%;
+height: 30px;
+border: 1px solid black;
+border-radius: 5px 5px 10px 10px;
+background-color: #7d0202;
+font-family: 'Teko', sans-serif;
+font-size: 20px;
+color: white;
+z-index: 10;
 }
 
 .name{
@@ -95,13 +99,15 @@ margin-top: 50px;
 }
 
 .product{
-  height: 300px;
-
+  height: 375px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .product:hover{
-  height: 300px;
-  width: 350px;
+  box-shadow: 0 0 40px;
+  transition: 1.5s;
+  background-color: white;
 }
 
 .map{
@@ -118,32 +124,15 @@ margin-top: 50px;
   font-family: 'Teko', sans-serif;
 }
 
-.flex-list-style {
-        display: flex;
-        list-style: none;
-  }
-.fa{
-    text-decoration: none;
-    background-color: #f1f1f1;
-    color: #ff2626;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30%;
-    box-shadow: -5px 5px 20px -5px #010101;
-    position: relative;
-    overflow: hidden;
-    
-}
+
+
 
 
 
 
 .block{
   font-family: 'Rubik Mono One', sans-serif;
-  margin-top: 200px;
+  margin-top: 120px;
   background-color: #3c3c3c;
   width: 300px;
   text-align: center;
@@ -153,15 +142,7 @@ margin-top: 50px;
   color: white;
 }
 
-#loginInput{
-  margin-top: 20px;
-  border: 1px solid grey;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 16px;
-}
-
-#passwordInput{
+.inputs{
   margin-top: 20px;
   border: 1px solid grey;
   border-radius: 4px;
@@ -174,7 +155,7 @@ margin-top: 50px;
   border: 1px solid grey;
   border-radius: 4px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 30px;
 }
 
@@ -183,13 +164,58 @@ margin-top: 170px;
 
 }
 
-
-
-
-
 .categories{
   background-color: grey;
   height: 70px;
   font-family: 'Coustard', serif;
   color: white;
+}
+
+.white{
+  color:white;
+}
+
+.white:hover{
+  color:#FB8122;
+  text-decoration: none;
+}
+
+.b-popup{
+  width:100%;
+  min-height:100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow:hidden;
+  position:fixed;
+  top:0px;
+  font-family: 'Teko', sans-serif;
+  font-size: 22px;
+}
+.b-popup .b-popup-content{
+  margin: 200px auto 0px auto;
+    width: 400px;
+    height: 210px;
+    padding: 30px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.a-popup{
+  width:100%;
+  min-height:100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow:hidden;
+  position:fixed;
+  top:0px;
+  font-family: 'Teko', sans-serif;
+  font-size: 22px;
+}
+.a-popup .a-popup-content{
+  margin: 200px auto 0px auto;
+    width: 400px;
+    height: 310px;
+    padding: 30px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
 }

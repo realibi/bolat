@@ -35,12 +35,14 @@
   </div>
 
 
-  <div class="b-popup" id="popup1">
-    <div class="b-popup-content">
+  <div class="a-popup" id="popup1">
+    <div class="a-popup-content">
       <div class="row">
         <div class="col-12 tac">
           <p>Incorrect login or password!</p>
           <p>Login and password must consist <br> minimum 6 symbols</p>
+          <p>Passwords must be equal</p>
+          <p>Email must consist @ symbol</p>
         </div>
         <br>
         <br>
@@ -55,20 +57,16 @@
     <center>
     <div class="block">
         <br>
-        <center><p class="">Log in</p></center>
-        <input type="text" id="loginInput" placeholder="Type your login"> <br><br>
-        <input type="password" id="passwordInput" placeholder="Type your password"> <br><br>
+        <center><p class="">Registration</p></center>
+        <input type="text" class="inputs" id="loginInput" placeholder="Type your login"> <br><br>
+        <input type="password" class="inputs" id="passwordInput" placeholder="Type your password"> <br><br>
+        <input type="password" class="inputs" id="secondPasswordInput" placeholder="Retype your password"> <br><br>
+        <input type="text" class="inputs" id="fullNameInput" placeholder="Type your full name"> <br><br>
+        <input type="text" class="inputs" id="emailInput" placeholder="Type your email"><br><br>
+        <br>
         <div class="row">
             <div class="col-12">
-                <input type="submit" value="Log in" id="loginBtn">
-            </div>
-            <br>
-            <br>
-            <div class="col-12">
-                <a href="registration.html">Registration</a>
-            </div>
-            <div class="col-12">
-                <a href="">Forgot password?</a>
+                <input type="submit" value="Register" id="registerBtn">
             </div>
             <br>
             <br>
@@ -77,5 +75,5 @@
     </div>
     </center>
 </body>
-<script src="loginCheck.js"></script>
+<script src="registrationCheck.js"></script>
 </html>

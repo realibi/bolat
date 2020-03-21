@@ -10,7 +10,7 @@ container.innerHTML = "<div class='row'>"+
                                 "<img src='" + imageSrc +"' width='70%'>" + 
                              "</div>" + 
                              "<div class='col-6'>" + 
-                                "<p id='name'>" + productName +"</p>" + 
+                                "<h3>" + productName +"</h3>" + 
                                 "<p id='description'>" + productDescription + "</p>" +
                                 "<h3 id='price'> Price: " + productPrice + "<h6>"+
                                 "<button class='buyButtonIndex w-50'>Order</button>" + 
